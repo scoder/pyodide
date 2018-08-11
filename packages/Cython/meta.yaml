@@ -1,0 +1,12 @@
+package:
+  name: Cython
+  version: 0.28.5
+
+source:
+  url: https://files.pythonhosted.org/packages/21/89/ca320e5b45d381ae0df74c4b5694f1471c1b2453c5eb4bac3449f5970481/Cython-0.28.5.tar.gz
+  sha256: b64575241f64f6ec005a4d4137339fb0ba5e156e826db2fdb5f458060d9979e0
+  patches:
+    - patches/no-compile.patch
+
+#build:
+#  cflags:

@@ -1,0 +1,12 @@
+diff --git a/setup.py b/setup.py
+index f44f33e..a957829 100755
+--- a/setup.py
++++ b/setup.py
+@@ -187,6 +187,7 @@ try:
+     compile_cython_itself = False
+ except ValueError:
+     compile_cython_itself = True
++compile_cython_itself = False
+
+ if compile_cython_itself and (is_cpython or cython_compile_more):
+     compile_cython_modules(cython_profile, cython_compile_more, cython_with_refnanny)
